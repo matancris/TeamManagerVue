@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/TeamManagerVue/precache-manifest.fa08b638558f69dc0e4baa71078dc75f.js"
+  "/TeamManagerVue/precache-manifest.47e82bc2dc09c8fa82afdde97195089a.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "team-manager"});
