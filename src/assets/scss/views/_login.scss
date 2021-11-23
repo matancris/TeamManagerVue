@@ -1,0 +1,28 @@
+.login {
+  height: calc(100vh - 50px);
+
+  form {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    height: 60%;
+    width: 30%;
+    padding: 30px;
+
+    &>* {
+      position: relative;
+      width: 80%;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: $clr5;
+      color: #fff;
+      padding: 10px;
+    }
+
+    //   @include for-mobile-layout {
+    //     width: 80%;
+    //   }
+  }
+}

@@ -1,0 +1,35 @@
+.task-list-wrapper {
+
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff91;
+
+    .task-list {
+        border-bottom: 1px solid #ddd;
+
+        &>* {
+            padding: 15px;
+            flex: 1;
+        }
+
+
+    }
+
+    .cancel-btn {
+        padding: 10px;
+        align-self: center;
+        text-transform: uppercase;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        margin-block: 3px;
+    }
+
+    h5 {
+        &:hover {
+            cursor: pointer;
+            background-color: #ddd;
+
+        }
+    }
+}

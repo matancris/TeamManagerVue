@@ -1,0 +1,41 @@
+.calender-edit {
+
+    .edit-form-wrapper {
+        z-index: 1;
+        inset: 0;
+        position: fixed;
+        min-height: 100vh;
+        min-width: 100vw;
+        background-color: #98949459;
+
+        .calender-edit-form {
+            border-radius: 5px;
+            background-color: #fff;
+            height: 80%;
+            width: 30%;
+            padding-block: 20px;
+
+            &>*:not(button, label) {
+                font-size: 1.2rem;
+                width: 70%
+            }
+
+            button {
+                background-color: $clr5;
+                color: #fff;
+                padding: 10px;
+            }
+
+            label {
+                font-size: 0.9rem;
+                align-self: flex-start;
+                margin-block-end: 5px;
+            }
+
+            @include for-mobile-layout {
+                width: 80%
+            }
+        }
+    }
+
+}

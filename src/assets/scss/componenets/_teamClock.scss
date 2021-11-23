@@ -1,0 +1,55 @@
+.team-clock {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    color: $clr1;
+    // min-width: 350px;
+    width: 100%;
+    font-weight: 700;
+    margin-block: 10px;
+    margin-inline: auto;
+    backdrop-filter: blur(4.0px);
+
+    background-image: url('@/../../img/clock-bgi.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+    /* styling the component inside the transition group */
+    // &>span { 
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    // }
+
+    &>*>* {
+        padding: 10px;
+        // flex: 1
+    }
+
+    .clock {
+        span {
+            font-size: 1.5rem;
+            font-weight: 700;
+
+            &:not(:last-child)::after {
+                content: ':'
+            }
+        }
+    }
+
+    .team-status {
+        h1 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        h5 {
+            flex: 1;
+            font-size: 1.1rem;
+
+        }
+    }
+
+}

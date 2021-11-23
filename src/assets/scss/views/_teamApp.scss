@@ -1,0 +1,63 @@
+.team-app, .member-req {
+  color: $clr1;
+
+  // background-image: url('@/../../img/wave-bgi.png');
+  // background-position: top;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+
+  .actions-container {
+    margin-bottom: 15px;
+
+    .generate-btn {
+      width: fit-content;
+      font-family: Raleway-Regular, sans-serif;
+      font-size: rem(14px);
+      font-weight: 700;
+      margin-inline-end: 15px;
+    }
+  }
+
+  table {
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff91;
+
+    th,
+    td {
+      border-radius: 5px;
+      padding: 2px;
+
+    }
+  }
+
+  .leads {
+    background-color: rgb(191, 226, 238);
+  }
+
+  .opening,
+  .green {
+    background-color: rgb(179, 245, 179);
+
+  }
+
+  .queue {
+    background-color: rgb(245, 172, 172);
+  }
+
+  .personal {
+    background-color: rgb(245, 183, 159);
+  }
+
+  .misterbit {
+    background-color: lightyellow;
+  }
+
+  .selected-cell {
+    background-color: lightgoldenrodyellow;
+    user-select: none;
+}
+}

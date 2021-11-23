@@ -1,0 +1,49 @@
+.calender-preview {
+
+    td {
+        user-select: none;
+    }
+
+    h1 {
+        margin-bottom: 1.5rem;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .my-transition{
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .title-icon-wrapper {
+        width: 100%;
+        position: relative;
+        
+
+        img {
+            max-height: 20px;
+            cursor: grab;
+            position: absolute;
+            right: 0;
+
+            &:active {
+                cursor: -webkit-grabbing;
+                cursor: grabbing;
+            }
+
+            // &:hover + h1 {
+            //     background-color: #ddd;
+            // }
+        }
+    }
+
+    .selected-cell {
+        background-color: lightgoldenrodyellow;
+    }
+
+
+}

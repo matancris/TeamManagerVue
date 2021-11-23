@@ -1,0 +1,73 @@
+.member-manager {
+    .add-modal-btn {
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: 1px solid #0977b9b0;
+        color: #0977b9b0;
+        font-size: 2rem;
+        transition: .3s;
+        z-index: 2;
+
+        &.modal-open {
+            transform: rotate(45deg)
+        }
+    }
+
+    .add-form-wrapper {
+        z-index: 1;
+        inset: 0;
+        position: fixed;
+        min-height: 100vh;
+        min-width: 100vw;
+        background-color: #98949459;
+
+        .add-form {
+            border-radius: 5px;
+            background-color: #fff;
+            height: 40%;
+            width: 30%;
+
+            &>*:not(button) {
+                font-size: 1.2rem;
+                width: 70%
+            }
+
+            button {
+                background-color: $clr5;
+                color: #fff;
+                padding: 10px;
+              }
+
+            @include for-mobile-layout {
+                width: 80%
+            }
+        }
+    }
+
+    .member-preview {
+        position: relative;
+        z-index: none;
+        background-color: #ffffff91;
+        border-radius: 5px;
+
+        &>*:not(button) {
+            margin-inline: 300px;
+
+            @include for-wide-layout {
+                margin-inline: 500px;
+
+            }
+        }
+
+        .delete-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+    }
+}
